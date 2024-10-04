@@ -1,0 +1,2 @@
+# bookbot
+static text analyzer
