@@ -39,11 +39,13 @@ def report(file_path, num_words, num_chars):
         clean_chars.append(new_dict)
     clean_chars.sort(reverse=True, key=sort_on)
     print(f"--- Begin report of {file_path} ---")
+    print("")
     print(f"{num_words} words found in the document")
     print("")
     for item in clean_chars:
         if item['char'].isalpha():
             print(f"The character '{item['char']}' was found {item['count']} times")
+    print("")
     print("--- End Report ---")
     
 
