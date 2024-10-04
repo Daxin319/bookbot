@@ -18,11 +18,11 @@ def word_count(file_path):
 def char_count(text):
     lowercase = text.lower()
     chars = {}
-    for char in text:
+    for char in lowercase:
         if char not in chars:
-            chars[f."{char}"] = 1
+            chars[char] = 1
         else:
-            chars[f."{char}"] += 1
+            chars[char] += 1
     return chars
 
 main()
